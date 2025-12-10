@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var imageView: ImageView
 
-    private val getContent = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
+    private val getContent = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? -> // Uniform Resource Identifier
         uri?.let {
             imageView.setImageURI(uri)
         }
